@@ -42,8 +42,35 @@ The classification result can be further used to match people with the most comp
 One of the most difficult challenges for me was the identification of what kind of data to be collected and used to classify Myers–Briggs personality types. During my final year research project at my university, I collected data from Reddit specifically posts from mental health communities in Reddit. By
 analyzing and learning posting information written by users, my proposed model could accurately identify whether a user’s post belongs to a specific mental disorder, I used similar reasoning in this project, moreover to my surprise there are all 16 personality types subreddits on Reddit some even with 133k members tho there are some subreddit with only few thousand members I collected data from all theses 16 subreddits using Pushshift Reddit API 
 
+### Reddit Data Collection Using Pushshift Reddit API [Link](https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Model/Reddit%20Posts%20and%20Comments%20Data%20Collection%20with%20Pushshift.py)
+
 ## Dataset
 following data has been collected in a total of 16 CSV files during Data cleaning and preprocessing these 16 files has been concatenated into a final CSV file
+
+|  Subreddit   | Number of subscribers    |  Number of posts collected  |
+| ------------ |:------------------------:| ---------------------------:|
+|   [ISTJ](https://www.reddit.com/r/ISTJ/)        |   12k  |      2600      |
+|  [INFJ](https://www.reddit.com/r/infj/)       |  101K   |    10,000        |
+|    [INTJ](https://www.reddit.com/r/intj/)       |    108K |     6,400      |
+|   [ENFJ](https://www.reddit.com/r/enfj/)        |   18.9K  |     6,600       |
+|    [ISTP](https://www.reddit.com/r/istp/)       |  19.3K   |     9,200       |
+|    [ESFJ](https://www.reddit.com/r/ESFJ/)       |   4K  |      800      |
+|     [INFP](https://www.reddit.com/r/infp/)      |  133K   |    8,600       |
+|   [ESTP](https://www.reddit.com/r/estp/)        |  5K   |     830       |
+|     [ENFP](https://www.reddit.com/r/ENFP/)      |  68K   |     1200       |
+|     [ESTP](https://www.reddit.com/r/estp/)      |   5K  |      1700     |
+|     [ESTJ](https://www.reddit.com/r/ESTJ/)      |  2.8K   |     700       |
+|     [ENTJ](https://www.reddit.com/r/entj/)      |  20K   |     9000       |
+|    [INTP](https://www.reddit.com/r/INTP/)       |  121K   |     12,000       |
+|     [ISFJ](https://www.reddit.com/r/isfj/)      |   12K  |     4,400       |
+|    [ENTP](https://www.reddit.com/r/entp/)       |  44K   |     7,600       |
+|    [ISFP](https://www.reddit.com/r/isfp/)     |  16K   |      4,100      |
+
+### Content
+|  Subreddit   | Body    |  Date  |
+
+
+
 
 ## Data cleaning and preprocessing
 Data cleaning and preprocessing included the following
@@ -63,7 +90,7 @@ Exploratory Data Analysis included the following
 * N-gram Analysis
 * Generating WordClouds
 
-### PROBLEMS ENCOUNTERED DURING EDA
+### PROBLEM ENCOUNTERED DURING EDA
 During data collection, I noticed there were not many posts in some subreddits, reflected by the fact my code collected little amount of data for ESTJ, ESTP, ESFP, ESFJ, ISTJ, and ISFJ subreddits as a result during EDA I noticed the class imbalance
 
 <img src="https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Images/class_Imbalance.png"/>
@@ -73,7 +100,7 @@ One of the most effective ways to solve the problem of Class Imbalance for NLP t
 ## Feature engineering
 For Multinomial Regression, I have used  Bag of words and
 TF-IDF Embeddings of each Reddit Post
-### PROBLEMS ENCOUNTERED DURING Feature engineering
+### PROBLEM ENCOUNTERED DURING FEATURE ENGINEERING 
 during Visualization of my high dimensional embeddings 
 I converted my higher dimensional TF-IDF Embedding/Bag of words Embedding into two-dimensional using Truncated-SVD then visualized my 2D embeddings the resultant visualization is not linearly separable in 2D hence models like SVM and Logistic regression will not perform well that was the rationale for Using RNN architecture with LSTM in this project
 
