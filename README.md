@@ -152,6 +152,7 @@ I tried learning curve analysis for eight different sizes of datasets and the re
 * Matplotlib & Seaborn for data visualization
 * NLTK
 * TensorFlow
+* SMOTE
 * Sklearn for model building
 * Python flask for HTTP server
 * HTML/CSS/Javascript for  UI
