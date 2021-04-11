@@ -113,11 +113,11 @@ I converted my higher dimensional TF-IDF Embedding/Bag of words Embedding into t
 
 ## Model Building and Evaluation
 For this project, I trained three models
-1. Multinomial Logistic Regression with  Bag of words Embeddings 
+1. Multinomial Logistic Regression with  Bag of words Embeddings, 
   Logistic regression, by default, is limited to two-class classification problems. Some extensions like one-vs-rest can allow logistic regression to be used for multi-class classification problems, although they require that the classification problem first be transformed into multiple binary classification problems. Instead, the multinomial logistic regression algorithm is an extension to the logistic regression model that involves changing the loss function to cross-entropy loss and predict probability distribution to a multinomial probability distribution to natively support multi-class classification problems.
-2. Multinomial Logistic Regression with  TF-IDF Embeddings 
+2. Multinomial Logistic Regression with  TF-IDF Embeddings, 
   Logistic regression, by default, is limited to two-class classification problems. Some extensions like one-vs-rest can allow logistic regression to be used for multi-class classification problems, although they require that the classification problem first be transformed into multiple binary classification problems. Instead, the multinomial logistic regression algorithm is an extension to the logistic regression model that involves changing the loss function to cross-entropy loss and predict probability distribution to a multinomial probability distribution to natively support multi-class classification problems.
-3. Recurrent Neural Networks with LSTM
+3. Recurrent Neural Networks with LSTM,
   Feed-forward neural networks have no memory of the input they receive and are bad at predicting what’s coming next. Because a feed-forward network only considers the current input, it has no notion of order in time. It simply can’t remember anything about what happened in the past except its training. In a RNN the information cycles through a loop. When it makes a decision, it considers the current input and also what it has learned from the inputs it received previously.
   A long short-term memory (LSTM) network is a type of RNN model that avoids the vanishing gradient problem by adding ’forget’ gates.
 
