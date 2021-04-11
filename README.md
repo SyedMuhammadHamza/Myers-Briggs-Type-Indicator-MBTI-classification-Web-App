@@ -137,7 +137,7 @@ Looking at the train and test accuracy plots or loss plots over epochs it's visi
 
 ## Future Improvements
 The data collected for the problem is not representative enough especially for some classes where collected posts were few hundreds 
-I tried learning curve analysis for eight different sizes of datasets and the result of the learning curve confirmed there was a gap between training and test score pointing towards High Variance problem hence in the future if more posts can be collected then the result will improve the performance of our models
+I tried learning curve analysis for eight different sizes of datasets and the result of the learning curve confirmed there was a gap between training and test score pointing towards High Variance problem hence in the future if more posts can be collected then the resultant dataset will improve the performance of these models
 
 ## User interface
 *  Used HTML,CSS and JavaScript,
