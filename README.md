@@ -1,4 +1,6 @@
 # Myers-Briggs-Type-Indicator-MBTI-classification-Web-App
+
+##Web Application
 ![Alt Text](https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Images/screenrecording.gif)
 
 ## Overview
@@ -42,7 +44,7 @@ The classification result can be further used to match people with the most comp
 One of the most difficult challenges for me was the identification of what kind of data to be collected and used to classify Myers–Briggs personality types. During my final year research project at my university, I collected data from Reddit specifically posts from mental health communities in Reddit. By
 analyzing and learning posting information written by users, my proposed model could accurately identify whether a user’s post belongs to a specific mental disorder, I used similar reasoning in this project, moreover to my surprise there are all 16 personality types subreddits on Reddit some even with 133k members tho there are some subreddit with only few thousand members I collected data from all theses 16 subreddits using Pushshift Reddit API 
 
-### Reddit Data Collection Using Pushshift Reddit API [Link](https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Model/Reddit%20Posts%20and%20Comments%20Data%20Collection%20with%20Pushshift.py)
+### Reddit Data Collection Using Pushshift Reddit API [Code Link](https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Model/Reddit%20Posts%20and%20Comments%20Data%20Collection%20with%20Pushshift.py)
 
 ## Dataset
 
@@ -130,21 +132,30 @@ For this project, I trained three models
 <img src="https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Images/plots1.png"/>
 <img src="https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Images/plots2.png"/>
 
-# User interface
+## User interface
 *  Used HTML,CSS and JavaScript,
 
-# Productionization
+## Productionization
 * Deployed model to production using Flask
 
 
-
-# Technologies 
+## Technologies 
 * Python
-* Numpy and OpenCV for data cleaning
+* Scikit-learn
 * Matplotlib & Seaborn for data visualization
+* NLTK
+* TensorFlow
 * Sklearn for model building
 * Python flask for HTTP server
 * HTML/CSS/Javascript for  UI
+
+
+## References
+[1]. [https://arxiv.org/abs/1106.1813](https://arxiv.org/abs/1106.1813)
+[2]. [https://link.springer.com/referenceworkentry/10.1007%2F978-3-319-28099-8_50-1](https://link.springer.com/referenceworkentry/10.1007%2F978-3-319-28099-8_50-1)
+
+
+
 
 ©SyedMuhammadHamza Licensed under [MIT License](https://github.com/SyedMuhammadHamza/Politician-Face-Classifier/blob/main/LICENSE)
 
