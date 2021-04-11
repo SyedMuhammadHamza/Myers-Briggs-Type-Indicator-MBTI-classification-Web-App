@@ -152,13 +152,14 @@ For this project, I trained three models
 
 
 ## References
-[1]. [https://arxiv.org/abs/1106.1813](https://arxiv.org/abs/1106.1813)
-[2]. [https://link.springer.com/referenceworkentry/10.1007%2F978-3-319-28099-8_50-1](https://link.springer.com/referenceworkentry/10.1007%2F978-3-319-28099-8_50-1)
+[1]. [https://link.springer.com/referenceworkentry/10.1007%2F978-3-319-28099-8_50-1](https://link.springer.com/referenceworkentry/10.1007%2F978-3-319-28099-8_50-1) <br/>
+[2]. [https://arxiv.org/abs/1106.1813](https://arxiv.org/abs/1106.1813) <br>
+[3]. [https://www.mentalhelp.net/psychological-testing/myers-briggs-type-indicator/](https://www.mentalhelp.net/psychological-testing/myers-briggs-type-indicator/)
 
 
 
 
-©SyedMuhammadHamza Licensed under [MIT License](https://github.com/SyedMuhammadHamza/Politician-Face-Classifier/blob/main/LICENSE)
+©SyedMuhammadHamza Licensed under [MIT License](https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/LICENSE)
 
 
 
