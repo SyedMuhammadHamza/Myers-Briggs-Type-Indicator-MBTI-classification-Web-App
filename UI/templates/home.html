@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    background-image: url("https://external-preview.redd.it/nz1qOjyQx0SaExhMYj1UEH0FLnGBp97hS6JdfF9Cf5o.jpg?width=960&crop=smart&auto=webp&s=5497da66b34f213b8abd424012ef730c03048a85"); background-repeat: no-repeat;	background-size: 1350px 590px;
+}
+.ml-container{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+}
+.container{  
+    position:relative;
+    margin:0 auto;
+    clear:left;
+    height:auto;
+    z-index: 0;
+    text-align:center;/* Add This*/
+}​
+h1 { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase; }
+
+
+h2 { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 30px; font-weight: 800; line-height: 36px; margin: 0 0 24px; text-align: center; }
+
+#brandname { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 30px; font-weight: 500; line-height: 36px; margin: 0 0 24px; text-align: center; }
+
+p { color: #ffffff ; font-family: 'Muli', sans-serif; font-size: 25px; background-color: #0000FF;font-weight: 500 margin-bottom: 30px; }
+
+
+a { color: #c8c8c8; text-decoration: underline; }
+
+
+a:hover { color: #1c1c1c; text-decoration: underline; }
+#parent {
+  display: flex;
+  justify-content: space-around;
+}
+#left { color:#ffffff; font-family: 'Raleway',sans-serif; background-color: #0000FF; font-size: 20px; font-weight:200; line-height: 36px; margin: 0 0 24px; text-align: center;
+}
+input[type=submit] {
+    padding:15px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+</style>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<h2>Myers–Briggs Type Indicator (MBTI) classification</h2>
+		<div id="brandname">
+			By SYED MUHAMMAD HAMZA
+		</div>
+		
+	</div>
+	</header>
+	<div id="parent">
+	    <div id="left">
+         Step1: Describe yourself in a maximum of 150 words <br>
+         Step2: Predict what Myers–Briggs Type Indicator (MBTI) classifier think your type is 
+        </div>
+	    <div class="ml-container">
+
+		    <form action="{{ url_for('predict')}}" method="POST">
+		    <center><p>Describe yourself Here</p></center>
+		    <!-- <input type="text" name="comment"/> -->
+		    <textarea name="message" rows="4" cols="50"></textarea>
+		    <br/>
+
+		    <input type="submit" class="btn-info" value="predict">
+		
+	        </form>
+		
+	    </div>
+	</div>
+
+	
+	
+
+</body>
+</html>

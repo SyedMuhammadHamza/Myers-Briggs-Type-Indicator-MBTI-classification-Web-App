@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    background-image: url("https://external-preview.redd.it/nz1qOjyQx0SaExhMYj1UEH0FLnGBp97hS6JdfF9Cf5o.jpg?width=960&crop=smart&auto=webp&s=5497da66b34f213b8abd424012ef730c03048a85"); background-repeat: no-repeat;	background-size: 1350px 590px;
+}
+h1 { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase; }
+
+
+h2 { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 30px; font-weight: 800; line-height: 36px; margin: 0 0 24px; text-align: center; }
+
+#brandname { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 30px; font-weight: 500; line-height: 36px; margin: 0 0 24px; text-align: center; }
+
+p { color: #ffffff ; font-family: 'Muli', sans-serif; font-size: 25px; background-color: #0000FF;font-weight: 500 margin-bottom: 30px; }
+
+
+a { color: #c8c8c8; text-decoration: underline; }
+#brandname { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 30px; font-weight: 500; line-height: 36px; margin: 0 0 24px; text-align: center; }
+
+</style>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<h2>Myers–Briggs Type Indicator (MBTI) classification</h2>
+		<div id="brandname">
+			By SYED MUHAMMAD HAMZA
+		</div>
+		
+	</div>
+	</header>
+	<p style="color:blue;font-size:20;text-align: center;"><b>Results for Comment</b></p>
+	<div class="results">
+	{% if prediction == 0%}
+	<h2 style="color:red;">You are a rare personality type, ISTJ - The Inspector</h2>
+	{% elif prediction == 1%}
+	<h2 style="color:blue;">You are a rare personality type, INFJ - The Advocate</h2>
+	{% elif prediction == 2%}
+	<h2 style="color:blue;">You are a rare personality type, INTJ - The Architect</h2>
+	{% elif prediction == 3%}
+	<h2 style="color:blue;">You are a rare personality type,ENFJ - The Giver</h2>
+	{% elif prediction == 4%}
+	<h2 style="color:blue;">You are a rare personality type, ISTP - The Crafter</h2>
+	{% elif prediction == 5%}
+	<h2 style="color:blue;">You are a rare personality type, ESFJ - The Caregiver</h2>
+	{% elif prediction == 6%}
+	<h2 style="color:blue;">You are a rare personality type, INFP - The Mediator</h2>
+	{% elif prediction == 7%}
+	<h2 style="color:blue;">You are a rare personality type, ESFP - The Performer</h2>
+	{% elif prediction == 8%}
+	<h2 style="color:blue;">You are a rare personality type, ENFP - The Champion</h2>
+	{% elif prediction == 9%}
+	<h2 style="color:blue;">You are a rare personality type, ESTP - The Persuader</h2>
+	{% elif prediction == 10%}
+	<h2 style="color:blue;">You are a rare personality type, ESTJ - The Director</h2>
+	{% elif prediction == 11%}
+	<h2 style="color:blue;">You are a rare personality type,ENTJ - The Commander</h2>
+	{% elif prediction == 12%}
+	<h2 style="color:blue;">You are a rare personality type, INTP - The Thinker</h2>
+	{% elif prediction == 13%}
+	<h2 style="color:blue;">You are a rare personality type, ISFJ - The Protector</h2>
+	{% elif prediction == 14%}
+	<h2 style="color:blue;">You are a rare personality type, ENTP - The Debater</h2>
+	{% elif prediction == 15%}
+	<h2 style="color:blue;">You are a rare personality type, ISFP - The Artist</h2>
+	{% endif %}
+
+	</div>
+
+</body>
+</html>
