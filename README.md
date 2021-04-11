@@ -1,12 +1,12 @@
 # Myers-Briggs-Type-Indicator-MBTI-classification-Web-App
 ![Alt Text](https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Images/screenrecording.gif)
 
-##Overview
+## Overview
 During my sophomore year of bachelors, I stumbled upon a book titled  "Gifts differing: understanding personality type" by Isabel Briggs Myers and Peter B. Myers through a friend I met on Reddit
 "This book distinguishes four categories of personality styles and shows how these qualities determine the way you perceive the world and come to conclusions about what you've seen"  
 later that same year, I came across a self-report by the same author titled "Myers–Briggs Type Indicator (MBTI)" designed to identify a person's personality type, strengths, and preferences, and based on this study people are identified as having one of 16 personality types
 
-###The MBTI Types
+### The MBTI Types
 
 * ISTJ - The Inspector
 * ISTP - The Crafter
@@ -25,6 +25,8 @@ later that same year, I came across a self-report by the same author titled "Mye
 * ENTP - The Debater
 * ENTJ - The Commander
 ![Alt Text](https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Images/gif.gif)
+
+
 Around the same time, I became interested in Machine learning and data science. One of the most fascinating aspects that got me interested in ML was the fact how most dating applications don't use  Machine learning for matching people this article explains how Tinder was matching people for so long let me quote some of it here
 
 "A few years ago, Tinder let Fast Company reporter Austin Carr look at his “secret internal Tinder rating,” and vaguely explained to him how the system worked. Essentially, the app used an Elo rating system, which is the same method used to calculate the skill levels of chess players: You rose in the ranks based on how many people swiped right on (“liked”) you, but that was weighted based on who the swiper was. The more right swipes that person had, the more their right swipe on you meant for your score.
