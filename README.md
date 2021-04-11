@@ -133,6 +133,8 @@ For this project, I trained three models
 <img src="https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Images/plots1.png"/>
 <img src="https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Images/plots2.png"/>
 
+Looking at the train and test accuracy plots or loss plots over epochs it's visible our model started to overfit after 8 epochs hence the final Model has been trained through 8 epochs
+
 ## User interface
 *  Used HTML,CSS and JavaScript,
 
