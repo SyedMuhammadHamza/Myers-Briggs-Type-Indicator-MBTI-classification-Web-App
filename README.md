@@ -4,7 +4,8 @@
 ![Alt Text](https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Images/screenrecording.gif)
 
 ## Overview
-During my sophomore year of bachelors, I stumbled upon a book titled  "Gifts differing: understanding personality type" by Isabel Briggs Myers and Peter B. Myers through a friend I met on Reddit
+During my sophomore year of bachelors, I stumbled upon a book titled  ["Gifts differing: understanding personality type"](https://www.amazon.com/Gifts-Differing-Understanding-Personality-Type/dp/089106074X
+) by Isabel Briggs Myers and Peter B. Myers through a friend I met on Reddit
 "This book distinguishes four categories of personality styles and shows how these qualities determine the way you perceive the world and come to conclusions about what you've seen"  
 later that same year, I came across a self-report by the same author titled "Myers–Briggs Type Indicator (MBTI)" designed to identify a person's personality type, strengths, and preferences, and based on this study people are identified as having one of 16 personality types
 
