@@ -1,6 +1,6 @@
 # Myers-Briggs-Type-Indicator-MBTI-classification-Web-App
 
-##Web Application
+## Web Application
 ![Alt Text](https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Images/screenrecording.gif)
 
 ## Overview
