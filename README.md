@@ -45,7 +45,6 @@ analyzing and learning posting information written by users, my proposed model c
 ### Reddit Data Collection Using Pushshift Reddit API [Link](https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Model/Reddit%20Posts%20and%20Comments%20Data%20Collection%20with%20Pushshift.py)
 
 ## Dataset
-following data has been collected in a total of 16 CSV files during Data cleaning and preprocessing these 16 files has been concatenated into a final CSV file
 
 |  Subreddit   | Number of subscribers    |  Number of posts collected  |
 | ------------ |:------------------------:| ---------------------------:|
@@ -67,7 +66,10 @@ following data has been collected in a total of 16 CSV files during Data cleanin
 |    [ISFP](https://www.reddit.com/r/isfp/)     |  16K   |      4,100      |
 
 ### Content
-|  Subreddit   | Body    |  Date  |
+following data has been collected in a total of 16 CSV files during Data cleaning and preprocessing these 16 files has been concatenated into a final CSV file
+|  Subreddit   | Body    |  Date |
+| ------------ |:------------------------:|:------------------------:|
+|  Subreddit name of post|Text of post  |  Posting date|
 
 
 
@@ -109,8 +111,13 @@ I converted my higher dimensional TF-IDF Embedding/Bag of words Embedding into t
 ## Model Building and Evaluation
 For this project, I trained three models
 1. Multinomial Logistic Regression with  Bag of words Embeddings 
+  Logistic regression, by default, is limited to two-class classification problems. Some extensions like one-vs-rest can allow logistic regression to be used for multi-class classification problems, although they require that the classification problem first be transformed into multiple binary classification problems. Instead, the multinomial logistic regression algorithm is an extension to the logistic regression model that involves changing the loss function to cross-entropy loss and predict probability distribution to a multinomial probability distribution to natively support multi-class classification problems.
 2. Multinomial Logistic Regression with  TF-IDF Embeddings 
+  Logistic regression, by default, is limited to two-class classification problems. Some extensions like one-vs-rest can allow logistic regression to be used for multi-class classification problems, although they require that the classification problem first be transformed into multiple binary classification problems. Instead, the multinomial logistic regression algorithm is an extension to the logistic regression model that involves changing the loss function to cross-entropy loss and predict probability distribution to a multinomial probability distribution to natively support multi-class classification problems.
 3. Recurrent Neural Networks with LSTM
+  Feed-forward neural networks have no memory of the input they receive and are bad at predicting what’s coming next. Because a feed-forward network only considers the current input, it has no notion of order in time. It simply can’t remember anything about what happened in the past except its training. In a RNN the information cycles through a loop. When it makes a decision, it considers the current input and also what it has learned from the inputs it received previously.
+  A long short-term memory (LSTM) network is a type of RNN model that avoids the vanishing gradient problem by adding ’forget’ gates.
+
 
 ## Model performance
 
