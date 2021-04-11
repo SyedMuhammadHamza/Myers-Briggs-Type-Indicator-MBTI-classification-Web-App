@@ -24,6 +24,7 @@ later that same year, I came across a self-report by the same author titled "Mye
 * ENFJ - The Giver
 * ENTP - The Debater
 * ENTJ - The Commander
+
 ![Alt Text](https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Images/gif.gif)
 
 
@@ -35,3 +36,84 @@ Tinder would then serve people with similar scores to each other more often, ass
 Influenced by all these facts, I came up with the idea of
 Myers–Briggs Type Indicator (MBTI) classification where my classifier can classify your personality type based on Isabel Briggs Myers self-study Myers–Briggs Type Indicator (MBTI). 
 The classification result can be further used to match people with the most compatible personality types
+
+
+## Data Collection
+One of the most difficult challenges for me was the identification of what kind of data to be collected and used to classify Myers–Briggs personality types. During my final year research project at my university, I collected data from Reddit specifically posts from mental health communities in Reddit. By
+analyzing and learning posting information written by users, my proposed model could accurately identify whether a user’s post belongs to a specific mental disorder, I used similar reasoning in this project, moreover to my surprise there are all 16 personality types subreddits on Reddit some even with 133k members tho there are some subreddit with only few thousand members I collected data from all theses 16 subreddits using Pushshift Reddit API 
+
+## Dataset
+following data has been collected in a total of 16 CSV files during Data cleaning and preprocessing these 16 files has been concatenated into a final CSV file
+
+## Data cleaning and preprocessing
+Data cleaning and preprocessing included the following
+
+* Removing rows with Links in Body feature
+* Removing rows with Emojis in Body feature
+* Removing rows with HTML elements in the Body feature
+* Removing rows with punctuations in the Body feature
+* Removing rows with stopwords in the Body feature
+* Removing rows with [removed] in Body feature
+* Removing rows with [deleted] in Body feature
+* Removing rows with just numbers in the Body feature
+
+## Exploratory Data Analysis
+Exploratory Data Analysis included the following
+* Class Imbalance check
+* N-gram Analysis
+* Generating WordClouds
+
+### PROBLEMS ENCOUNTERED DURING EDA
+During data collection, I noticed there were not many posts in some subreddits, reflected by the fact my code collected little amount of data for ESTJ, ESTP, ESFP, ESFJ, ISTJ, and ISFJ subreddits as a result during EDA I noticed the class imbalance
+
+<img src="https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Images/class_Imbalance.png"/>
+
+One of the most effective ways to solve the problem of Class Imbalance for NLP tasks is to use an oversampling technique called SMOTE( Synthetic Minority Oversampling Technique oversampling methods) hence I solved Class Imbalance using SMOTE for this problem 
+
+## Feature engineering
+For Multinomial Regression, I have used  Bag of words and
+TF-IDF Embeddings of each Reddit Post
+### PROBLEMS ENCOUNTERED DURING Feature engineering
+during Visualization of my high dimensional embeddings 
+I converted my higher dimensional TF-IDF Embedding/Bag of words Embedding into two-dimensional using Truncated-SVD then visualized my 2D embeddings the resultant visualization is not linearly separable in 2D hence models like SVM and Logistic regression will not perform well that was the rationale for Using RNN architecture with LSTM in this project
+
+<img src="https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Images/embedding1.png"/>
+
+## Model Building and Evaluation
+For this project, I trained three models
+1. Multinomial Logistic Regression with  Bag of words Embeddings 
+2. Multinomial Logistic Regression with  TF-IDF Embeddings 
+3. Recurrent Neural Networks with LSTM
+
+## Model performance
+
+| Algorithm        | Accuracy           |  Recall |  Precision |  F1  | 
+| ---------------- |:------------------:| -------:|-----------:|-----:|
+|Multinomial Logistic Regression with  Bag of words Embeddings Score|  45.17% | 0.48 |0.47 | 0.45|
+|Multinomial Logistic Regression with  TF-IDF Embeddings Model| 50.20% | 0.55 |0.58 | 0.56|
+|Recurrent Neural Networks with LSTM|  95.33% | 0.70 |0.69 | 0.69|
+
+<img src="https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Images/plots1.png"/>
+<img src="https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Images/plots2.png"/>
+
+# User interface
+*  Used HTML,CSS and JavaScript,
+
+# Productionization
+* Deployed model to production using Flask
+
+
+
+# Technologies 
+* Python
+* Numpy and OpenCV for data cleaning
+* Matplotlib & Seaborn for data visualization
+* Sklearn for model building
+* Python flask for HTTP server
+* HTML/CSS/Javascript for  UI
+
+©SyedMuhammadHamza Licensed under [MIT License](https://github.com/SyedMuhammadHamza/Politician-Face-Classifier/blob/main/LICENSE)
+
+
+
+
