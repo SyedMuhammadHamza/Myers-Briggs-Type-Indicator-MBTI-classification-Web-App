@@ -105,18 +105,18 @@ One of the most effective ways to solve the problem of Class Imbalance for NLP t
 
 ## Feature engineering
 For Multinomial Regression, I have used  Bag of words and
-TF-IDF Embeddings of each Reddit Post
+TF-IDF features of each Reddit Post
 ### PROBLEM ENCOUNTERED DURING FEATURE ENGINEERING 
 during Visualization of my high dimensional embeddings 
-I converted my higher dimensional TF-IDF Embedding/Bag of words Embedding into two-dimensional using Truncated-SVD then visualized my 2D embeddings the resultant visualization is not linearly separable in 2D hence models like SVM and Logistic regression will not perform well that was the rationale for Using RNN architecture with LSTM in this project
+I converted my higher dimensional TF-IDF features/Bag of words features into two-dimensional using Truncated-SVD then visualized my 2D embeddings the resultant visualization is not linearly separable in 2D hence models like SVM and Logistic regression will not perform well that was the rationale for Using RNN architecture with LSTM in this project
 
 <img src="https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Images/embedding1.png"/>
 
 ## Model Building and Evaluation
 For this project, I trained three models
-1. Multinomial Logistic Regression with  Bag of words Embeddings, 
+1. Multinomial Logistic Regression with  Bag of words features, 
   Logistic regression, by default, is limited to two-class classification problems. Some extensions like one-vs-rest can allow logistic regression to be used for multi-class classification problems, although they require that the classification problem first be transformed into multiple binary classification problems. Instead, the multinomial logistic regression algorithm is an extension to the logistic regression model that involves changing the loss function to cross-entropy loss and predict probability distribution to a multinomial probability distribution to natively support multi-class classification problems.
-2. Multinomial Logistic Regression with  TF-IDF Embeddings, 
+2. Multinomial Logistic Regression with  TF-IDF features, 
   Logistic regression, by default, is limited to two-class classification problems. Some extensions like one-vs-rest can allow logistic regression to be used for multi-class classification problems, although they require that the classification problem first be transformed into multiple binary classification problems. Instead, the multinomial logistic regression algorithm is an extension to the logistic regression model that involves changing the loss function to cross-entropy loss and predict probability distribution to a multinomial probability distribution to natively support multi-class classification problems.
 3. Recurrent Neural Networks with LSTM,
   Feed-forward neural networks have no memory of the input they receive and are bad at predicting what’s coming next. Because a feed-forward network only considers the current input, it has no notion of order in time. It simply can’t remember anything about what happened in the past except its training. In a RNN the information cycles through a loop. When it makes a decision, it considers the current input and also what it has learned from the inputs it received previously.
@@ -127,8 +127,8 @@ For this project, I trained three models
 
 | Algorithm        | Accuracy           |  Recall |  Precision |  F1  | 
 | ---------------- |:------------------:| -------:|-----------:|-----:|
-|Multinomial Logistic Regression with  Bag of words Embeddings Score|  45.17% | 0.48 |0.47 | 0.45|
-|Multinomial Logistic Regression with  TF-IDF Embeddings Model| 50.20% | 0.55 |0.58 | 0.56|
+|Multinomial Logistic Regression with  Bag of words features Score|  45.17% | 0.48 |0.47 | 0.45|
+|Multinomial Logistic Regression with  TF-IDF features Model| 50.20% | 0.55 |0.58 | 0.56|
 |Recurrent Neural Networks with LSTM|  95.33% | 0.70 |0.69 | 0.69|
 
 <img src="https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Images/plots1.png"/>
