@@ -31,7 +31,8 @@ later that same year, I came across a self-report by the same author titled "Mye
 ![Alt Text](https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Images/gif.gif)
 
 
-Around the same time, I became interested in Machine learning and data science. One of the most fascinating aspects that got me interested in ML was the fact how most dating applications don't use  Machine learning for matching people this article explains how Tinder was matching people for so long let me quote some of it here
+Around the same time, I became interested in Machine learning and data science. One of the most fascinating aspects that got me interested in ML was the fact how most dating applications don't use  Machine learning for matching people [this](https://www.vox.com/2019/2/7/18210998/tinder-algorithm-swiping-tips-dating-app-science
+) article explains how Tinder was matching people for so long let me quote some of it here
 
 "A few years ago, Tinder let Fast Company reporter Austin Carr look at his “secret internal Tinder rating,” and vaguely explained to him how the system worked. Essentially, the app used an Elo rating system, which is the same method used to calculate the skill levels of chess players: You rose in the ranks based on how many people swiped right on (“liked”) you, but that was weighted based on who the swiper was. The more right swipes that person had, the more their right swipe on you meant for your score.
 Tinder would then serve people with similar scores to each other more often, assuming that people whom the crowd had similar opinions of would be in approximately the same tier of what they called “desirability.” (Tinder hasn’t revealed the intricacies of its points system, but in chess, a newbie usually has a score of around 800 and a top-tier expert has anything from 2,400 up.) (Also, Tinder declined to comment for this story.) "
@@ -42,7 +43,7 @@ The classification result can be further used to match people with the most comp
 
 
 ## Data Collection
-One of the most difficult challenges for me was the identification of what kind of data to be collected and used to classify Myers–Briggs personality types. During my final year research project at my university, I collected data from Reddit specifically posts from mental health communities in Reddit. By
+One of the most difficult challenges for me was the identification of what kind of data to be collected to use for classify Myers–Briggs personality types. During my final year research project at my university, I collected data from Reddit, specifically posts from mental health communities in Reddit. By
 analyzing and learning posting information written by users, my proposed model could accurately identify whether a user’s post belongs to a specific mental disorder, I used similar reasoning in this project, moreover to my surprise there are all 16 personality types subreddits on Reddit some even with 133k members tho there are some subreddit with only few thousand members I collected data from all theses 16 subreddits using Pushshift Reddit API 
 
 ### Reddit Data Collection Using Pushshift Reddit API [Code Link](https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Model/Reddit%20Posts%20and%20Comments%20Data%20Collection%20with%20Pushshift.py)
@@ -96,7 +97,7 @@ Exploratory Data Analysis included the following
 * Generating WordClouds
 
 ### PROBLEM ENCOUNTERED DURING EDA
-During data collection, I noticed there were not many posts in some subreddits, reflected by the fact my code collected little amount of data for ESTJ, ESTP, ESFP, ESFJ, ISTJ, and ISFJ subreddits as a result during EDA I noticed the class imbalance
+During data collection, I noticed there were not many posts in some subreddits, reflected by the fact my code collected little amount of data for ESTJ, ESTP, ESFP, ESFJ, ISTJ, and ISFJ subreddits as a result during EDA I noticed the class imbalance situation
 
 <img src="https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Images/class_Imbalance.png"/>
 
