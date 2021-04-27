@@ -28,7 +28,7 @@ later that same year, I came across a self-report by the same author titled "Mye
 * ENTP - The Debater
 * ENTJ - The Commander
 
-![Alt Text](https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Images/gif.gif)
+![Alt Text](https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Images/gif.gif) 
 
 
 Around the same time, I became interested in Machine learning and data science. One of the most fascinating aspects that got me interested in ML was the fact how most dating applications don't use  Machine learning for matching people [this](https://www.vox.com/2019/2/7/18210998/tinder-algorithm-swiping-tips-dating-app-science
