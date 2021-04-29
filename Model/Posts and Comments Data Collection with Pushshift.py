@@ -14,11 +14,8 @@ import time
 url = "https://api.pushshift.io/reddit/search/submission"
 url_comments = "https://api.pushshift.io/reddit/search/comment"
 
-#Personality_Types=['ISTJ','infj','intj','enfj','istp','ESFJ','infp','ESFP','ENFP','estp','ESTJ','entj','INTP','isfj','entp','isfp']
-#Personality_Types=['ESFJ','ESFP','estp','ESTJ']
-#Personality_Types=['intj','ENFP','entp']
-#Personality_Types=['ISTJ','isfj']
-Personality_Types=['ESTJ']
+Personality_Types=['ISTJ','infj','intj','enfj','istp','ESFJ','infp','ESFP','ENFP','estp','ESTJ','entj','INTP','isfj','entp','isfp']
+
 def get_comments(subreddit, n_iter):
     
     df_list = []
