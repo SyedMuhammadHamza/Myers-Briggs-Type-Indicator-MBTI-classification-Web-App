@@ -46,7 +46,7 @@ The classification result can be further used to match people with the most comp
 One of the most difficult challenges for me was the identification of what kind of data to be collected to use for classify Myers–Briggs personality types. During my final year research project at my university, I collected data from Reddit, specifically posts from mental health communities in Reddit. By
 analyzing and learning posting information written by users, my proposed model could accurately identify whether a user’s post belongs to a specific mental disorder, I used similar reasoning in this project, moreover to my surprise there are all 16 personality types subreddits on Reddit some even with 133k members tho there are some subreddit with only few thousand members I collected data from all theses 16 subreddits using Pushshift Reddit API 
 
-### Reddit Data Collection Using Pushshift Reddit API [Code Link](https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Model/Reddit%20Posts%20and%20Comments%20Data%20Collection%20with%20Pushshift.py)
+### Reddit Data Collection Using Pushshift Reddit API [Code Link](https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Model/Posts%20and%20Comments%20Data%20Collection%20with%20Pushshift.py)
 
 ## Dataset
 
