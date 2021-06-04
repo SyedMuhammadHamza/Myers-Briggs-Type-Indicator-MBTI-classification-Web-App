@@ -22,7 +22,6 @@
 - [Technologies](#technologies)
 - [References](#references)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## Overview
 During my sophomore year of bachelors, I stumbled upon a book titled  ["Gifts differing: understanding personality type"](https://www.amazon.com/Gifts-Differing-Understanding-Personality-Type/dp/089106074X
