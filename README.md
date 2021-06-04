@@ -3,6 +3,27 @@
 ## Web Application
 ![Alt Text](https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Images/screenrecording.gif)
 
+- [Overview](#overview)
+  * [The MBTI Types](#the-mbti-types)
+- [Data Collection](#data-collection)
+  * [Reddit Data Collection Using Pushshift Reddit API [Code Link](https://github.com/SyedMuhammadHamza/Myers-Briggs-Type-Indicator-MBTI-classification-Web-App/blob/main/Model/Posts%20and%20Comments%20Data%20Collection%20with%20Pushshift.py)](#reddit-data-collection-using-pushshift-reddit-api--code-link--https---githubcom-syedmuhammadhamza-myers-briggs-type-indicator-mbti-classification-web-app-blob-main-model-posts-20and-20comments-20data-20collection-20with-20pushshiftpy-)
+- [Dataset](#dataset)
+  * [Content](#content)
+- [Data cleaning and preprocessing](#data-cleaning-and-preprocessing)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+  * [PROBLEM ENCOUNTERED DURING EDA](#problem-encountered-during-eda)
+- [Feature engineering](#feature-engineering)
+  * [PROBLEM ENCOUNTERED DURING FEATURE ENGINEERING](#problem-encountered-during-feature-engineering)
+- [Model Building and Evaluation](#model-building-and-evaluation)
+- [Model performance](#model-performance)
+- [Future Improvements](#future-improvements)
+- [User interface](#user-interface)
+- [Productionization](#productionization)
+- [Technologies](#technologies)
+- [References](#references)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 ## Overview
 During my sophomore year of bachelors, I stumbled upon a book titled  ["Gifts differing: understanding personality type"](https://www.amazon.com/Gifts-Differing-Understanding-Personality-Type/dp/089106074X
 ) by Isabel Briggs Myers and Peter B. Myers through a friend I met on Reddit
